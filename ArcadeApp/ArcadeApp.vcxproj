@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{c2e4dab2-865d-4124-bb55-39303dc2006e}</ProjectGuid>
+    <RootNamespace>ArcadeApp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Games;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Scenes;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Graphics;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Input;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\App;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Utils;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Shapes;C:\Dev\Plugins\SDL2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Dev\Plugins\SDL2\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Games;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Scenes;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Graphics;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Input;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\App;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Utils;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Shapes;C:\Dev\Plugins\SDL2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Dev\Plugins\SDL2\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Games;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Scenes;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Graphics;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Input;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\App;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Utils;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Shapes;C:\Dev\Plugins\SDL2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Dev\Plugins\SDL2\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)bin\intermediates\$(Platform)\$(Configuration)\</IntDir>
+    <IncludePath>C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Games;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Scenes;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Graphics;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Input;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\App;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Utils;C:\Dev\ArcadeGames\ArcadeApp\ArcadeApp\src\Shapes;C:\Dev\Plugins\SDL2\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Dev\Plugins\SDL2\lib\x64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\App\App.cpp" />
+    <ClCompile Include="src\App\Button.cpp" />
+    <ClCompile Include="src\Games\BreakOut\Ball.cpp" />
+    <ClCompile Include="src\Games\BreakOut\Block.cpp" />
+    <ClCompile Include="src\Games\BreakOut\BreakOut.cpp" />
+    <ClCompile Include="src\Games\BreakOut\BreakoutGameLevel.cpp" />
+    <ClCompile Include="src\Games\BreakOut\Excluder.cpp" />
+    <ClCompile Include="src\Games\BreakOut\LevelBoundary.cpp" />
+    <ClCompile Include="src\Games\BreakOut\Paddle.cpp" />
+    <ClCompile Include="src\Graphics\BitmapFont.cpp" />
+    <ClCompile Include="src\Graphics\BMPImage.cpp" />
+    <ClCompile Include="src\Graphics\Color.cpp" />
+    <ClCompile Include="src\Graphics\Screen.cpp" />
+    <ClCompile Include="src\Graphics\ScreenBuffer.cpp" />
+    <ClCompile Include="src\Graphics\SpriteSheet.cpp" />
+    <ClCompile Include="src\Input\GameController.cpp" />
+    <ClCompile Include="src\Input\InputController.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Scenes\ArcadeScene.cpp" />
+    <ClCompile Include="src\Scenes\ButtonOptionsScene.cpp" />
+    <ClCompile Include="src\Scenes\GameScene.cpp" />
+    <ClCompile Include="src\Scenes\NotImplementedScene.cpp" />
+    <ClCompile Include="src\Shapes\AARectangle.cpp" />
+    <ClCompile Include="src\Shapes\Circle.cpp" />
+    <ClCompile Include="src\Shapes\Line2D.cpp" />
+    <ClCompile Include="src\Shapes\Shape.cpp" />
+    <ClCompile Include="src\Shapes\Triangle.cpp" />
+    <ClCompile Include="src\Utils\FileCommandLoader.cpp" />
+    <ClCompile Include="src\Utils\Utils.cpp" />
+    <ClCompile Include="src\Utils\Vec2D.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\App\App.h" />
+    <ClInclude Include="src\App\Button.h" />
+    <ClInclude Include="src\Games\BreakOut\Ball.h" />
+    <ClInclude Include="src\Games\BreakOut\Block.h" />
+    <ClInclude Include="src\Games\BreakOut\BoundaryEdge.h" />
+    <ClInclude Include="src\Games\BreakOut\BreakOut.h" />
+    <ClInclude Include="src\Games\BreakOut\BreakoutGameLevel.h" />
+    <ClInclude Include="src\Games\BreakOut\Excluder.h" />
+    <ClInclude Include="src\Games\BreakOut\LevelBoundary.h" />
+    <ClInclude Include="src\Games\BreakOut\Paddle.h" />
+    <ClInclude Include="src\Games\Game.h" />
+    <ClInclude Include="src\Graphics\BitmapFont.h" />
+    <ClInclude Include="src\Graphics\BMPImage.h" />
+    <ClInclude Include="src\Graphics\Color.h" />
+    <ClInclude Include="src\Graphics\Screen.h" />
+    <ClInclude Include="src\Graphics\ScreenBuffer.h" />
+    <ClInclude Include="src\Graphics\SpriteSheet.h" />
+    <ClInclude Include="src\Input\GameController.h" />
+    <ClInclude Include="src\Input\InputAction.h" />
+    <ClInclude Include="src\Input\InputController.h" />
+    <ClInclude Include="src\Scenes\ArcadeScene.h" />
+    <ClInclude Include="src\Scenes\ButtonOptionsScene.h" />
+    <ClInclude Include="src\Scenes\GameScene.h" />
+    <ClInclude Include="src\Scenes\NotImplementedScene.h" />
+    <ClInclude Include="src\Scenes\Scene.h" />
+    <ClInclude Include="src\Shapes\AARectangle.h" />
+    <ClInclude Include="src\Shapes\Circle.h" />
+    <ClInclude Include="src\Shapes\Line2D.h" />
+    <ClInclude Include="src\Shapes\Shape.h" />
+    <ClInclude Include="src\Shapes\Triangle.h" />
+    <ClInclude Include="src\Utils\FileCommandLoader.h" />
+    <ClInclude Include="src\Utils\Utils.h" />
+    <ClInclude Include="src\Utils\Vec2D.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\Assets\ArcadeFont.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\Assets\ArcadeFont.txt" />
+    <Text Include="src\Assets\BreakoutLevels.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
